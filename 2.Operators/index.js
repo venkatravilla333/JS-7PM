@@ -95,6 +95,33 @@ var b = 10
 // console.log(a != b) //loose inequality
 // console.log(a !== b) //strict inequality
 
+//Ternary operator
+
+// var age = 15
+
+// var res = age >= 18 ? 'Having vote right' : 'not having vote right'
+
+// console.log(res)
+
+
+//Logical operators
+
+// var income = true
+
+// var cibil = false
+
+// var address = false
+
+// let ICICICC = income && cibil && address
+// let RBLCC = (income || cibil) && address
+// console.log(ICICICC)
+// console.log(RBLCC)
+
+// var res = !income
+// console.log(!res)
+
+
+
 
 
 
