@@ -90,7 +90,7 @@
 
 // var person = {
 //   name: 'sachin',
-//   age: 40, 
+//   age: 40,
 //   city: 'mumbai',
 //   play: () => {
 //     console.log('play')
@@ -124,7 +124,7 @@
 
 // var person = {
 //   name: 'sachin',
-//   age: 40, 
+//   age: 40,
 //   city: 'mumbai',
 //   play: () => {
 //     console.log('play')
@@ -177,13 +177,13 @@
 // import lodash from 'lodash'
 // var lodash = require('lodash')
 
-var originalObj = {
-  name: 'sachin',
-  address: { road: 101 },
-  play: () => {
-    console.log('play')
-  }
-}
+// var originalObj = {
+//   name: 'sachin',
+//   address: { road: 101 },
+//   play: () => {
+//     console.log('play')
+//   }
+// }
 
 // var copiedObj = originalObj //normal copy
 // var copiedObj = JSON.parse(JSON.stringify(originalObj))  //deep copy
@@ -199,6 +199,117 @@ var originalObj = {
 
 // console.log(originalObj)
 // console.log(copiedObj)
+
+
+//Math obj
+
+// console.log(Math)
+// console.log(Math.min(6, 2, 7))
+// console.log(Math.max(6, 2, 7))
+// console.log(Math.ceil(10.2))
+// console.log(Math.ceil(10.7))
+// console.log(Math.floor(10.7))
+// console.log(Math.round(10.4))
+// console.log(Math.round(10.5))
+// console.log(Math.round(10.7))
+// console.log(Math.random()*100)
+// console.log(Math.sqrt(25))
+// console.log(Math.pow(3, 3))
+
+
+//Data obj
+
+// var now = new Date()
+// console.log(now)
+
+// console.log(now.getFullYear())
+// console.log(now.getMonth())
+// console.log(now.getDay())
+// console.log(now.getDate())
+// console.log(now.getHours())
+// console.log(now.getMinutes())
+// console.log(now.getSeconds())
+
+// now.setFullYear(2040)
+
+// console.log(now)
+
+// var date1 = new Date(2050, 6, 20, 10, 10, 10)//number
+// console.log(date1)
+
+// var date2 = new Date("2050 10 10 10:10:10")//string
+// console.log(date2)
+
+
+// var name = 'sachin'
+
+// var age = 40
+
+// //without template string
+// console.log('Hi this is' + ' ' + name + ' ' + 'my age is' + ' ' + age)
+
+// //with template string
+
+// console.log(`Hi this is ${name} my age is ${age}`)
+
+
+//String Object
+
+// var msg = ' Hi how are you '
+// var msg = 'hi how are you hi'
+
+// console.log(msg.length)
+
+// console.log(msg.trim().length)
+// console.log(msg.trimStart().length)
+// console.log(msg.trimEnd().length)
+
+// console.log(msg)
+// var strCopy = msg.slice()
+// var strCopy = msg.slice(0)
+// var strCopy = msg.slice(0, 4)
+// var strCopy = msg.slice(-3)
+// var strCopy = msg.substring()
+// var strCopy = msg.substring(0)
+// var strCopy = msg.substring(0, 4)
+// var strCopy = msg.substring(-3)
+// console.log(strCopy)
+
+// console.log(msg)
+
+// console.log(msg.charAt(4))
+// console.log(msg.charCodeAt(0))
+
+// console.log(msg.concat(' bye'))
+
+// console.log(msg.split())
+// console.log(msg.split(''))
+// console.log(msg.split(' '))
+
+// console.log(msg.indexOf('hi'))
+// console.log(msg.indexOf('bye'))
+// console.log(msg.lastIndexOf('hi'))
+// console.log(msg.lastIndexOf('bye'))
+// console.log(msg.includes('you'))
+// console.log(msg.includes('bye'))
+// console.log(msg.startsWith('hi'))
+// console.log(msg.startsWith('bye'))
+// console.log(msg.endsWith('hi'))
+// console.log(msg.endsWith('bye'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
