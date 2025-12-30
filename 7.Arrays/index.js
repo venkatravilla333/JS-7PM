@@ -177,7 +177,7 @@
 //   console.log(index, arr[index])
 // }
 
-// forEach method 
+// forEach method
 
 // var res = arr.forEach((value, index) => {
 //   console.log(value, index)
@@ -186,8 +186,8 @@
 
 
 
-var arr = [1, 2, 3, 4, 5]
-console.log(arr)
+// var arr = [1, 2, 3, 4, 5]
+// console.log(arr)
 
 //filter
 
@@ -211,6 +211,132 @@ console.log(arr)
 // })
 
 // // console.log(forEachRes)
+
+//reduce
+
+// var arr = [1, 2, 3, 4, 5]
+
+// var reduceRes= arr.reduce((cum, cur) => {
+//   console.log(cum, cur)
+// }, 0)
+// console.log(reduceRes)
+
+
+//How to remove duplicate values from arr
+
+// var arr = [1, 2, 3, 4, 3, 5, 2]
+// console.log(arr)
+
+// var uniqueArr = [...new Set(arr)]
+// var uniqueArr = []
+// console.log(uniqueArr)
+
+// var arr = [1, 2, 3, 4, 3, 5, 2]
+// function removeDuplicates(arr) {
+//   for (var value of arr) {
+//     console.log(value)
+//     if (uniqueArr.indexOf(value) === -1) {
+//      uniqueArr.push(value)
+//    }
+//   }
+// }
+// removeDuplicates(arr)
+
+// console.log(uniqueArr)
+
+// var arr = [1, 2, [10, 20], [100, 200, [1000, 2000]]]
+// console.log(arr)
+
+// var flattenArr = arr.flat(Infinity)
+// var flattenArr = []
+
+// console.log(flattenArr)
+// var arr = [1, 2, [10, 20], [100, 200, [1000, 2000]]]
+
+// function flattenArrFun(arr) {
+  
+//   for (var value of arr) {
+//     console.log(value)
+//     if (Array.isArray(value)) {
+//       flattenArrFun(value)
+//     } else {
+//       flattenArr.push(value)
+//     }
+//   }
+// }
+// flattenArrFun(arr)
+
+// console.log(flattenArr)
+
+
+//Sorting
+
+//primitives (String)
+
+// var arr = ['kohli', 'dhoni', 'rahul', 'gill']
+// var arr = [2, 6, 1, 8, 3]
+// var arr = [2, 16, 1, 8, 3]
+// var arr = [{course: 'node'}, {course: 'html'}, {course: 'react'}, {course: 'css'}]
+
+// console.log(arr)
+
+// var ASO = arr.sort()
+// console.log(ASO)
+
+// console.log(arr)
+
+// // var DSO = arr.reverse()
+// // console.log(DSO)
+
+//number(single)
+
+// var ASO = arr.sort((a, b) => {
+//   if (a > b) {
+//     return -1
+//   }
+//   if (a < b) {
+//     return 1
+//   }
+// })
+
+// console.log(ASO)
+
+// var DSO = ASO.reverse()
+// console.log(DSO)
+
+// var ASO = arr.sort((obj1, obj2) => {
+//   if (obj1.course > obj2.course) {
+//     return -1
+//   }
+//   if (obj1.course < obj2.course) {
+//     return 1
+//   }
+// })
+
+// console.log(ASO)
+
+
+// for (var i = 0; i < arr.length; i++){
+//   for (var j = i + 1; j < arr.length; j++){
+//     if (arr[i].course > arr[j].course) {
+//       var temp = arr[i].course
+//       arr[i].course = arr[j].course
+//       arr[j].course = temp
+//     }
+//   }
+// }
+
+// console.log(arr)
+
+
+
+
+
+
+
+
+
+
 
 
 
