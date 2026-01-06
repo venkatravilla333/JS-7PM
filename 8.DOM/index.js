@@ -134,48 +134,98 @@ var body = document.getElementById('body')
 // var btn = document.getElementById('btn')
 // console.log(btn)
 
-var addBtn = document.getElementById('add')
+// var addBtn = document.getElementById('add')
 
-var data = 'hello sachin'
+// var data = 'hello sachin'
 
-var h2 = document.createElement('h2')
+// var h2 = document.createElement('h2')
 
-h2.textContent = data
+// h2.textContent = data
 
-function addFun() {
-  body.appendChild(h2)
-}
+// function addFun() {
+//   body.appendChild(h2)
+// }
 
-addBtn.addEventListener('click', addFun)
+// addBtn.addEventListener('click', addFun)
 
 
 //how to replace child
 
 
-var h5 = document.createElement('h5')
+// var h5 = document.createElement('h5')
 
 // console.log(h5)
 
-h5.innerText = 'Hello kohli'
+// h5.innerText = 'Hello kohli'
 
-var replaceBtn = document.getElementById('replace')
+// var replaceBtn = document.getElementById('replace')
 
-function replaceFun() {
-  body.replaceChild(h5, h2)
-}
+// function replaceFun() {
+//   body.replaceChild(h5, h2)
+// }
 
-replaceBtn.addEventListener('click', replaceFun)
+// replaceBtn.addEventListener('click', replaceFun)
 
 
 //How to remove child
 
-var removeBtn = document.getElementById('remove')
+// var removeBtn = document.getElementById('remove')
 
-function removeFun() {
-  body.removeChild(h2)
-  // h2.remove()
-}
-removeBtn.addEventListener('click', removeFun)
+// function removeFun() {
+//   body.removeChild(h2)
+//   // h2.remove()
+// }
+// removeBtn.addEventListener('click', removeFun)
+
+//events handling in js
+
+
+
+// var subchild = document.getElementById('subchild')
+
+// function subChildFun(e) {
+//   console.log('subchild')
+//   console.log(e)
+//   console.log(e.target)
+//   // e.stopPropagation()
+//  console.log(e.clientX)
+//  console.log(e.clientY)
+//  console.log(e.offsetX)
+//  console.log(e.offsetY)
+// }
+
+// subchild.addEventListener('click', subChildFun)
+
+// var child = document.getElementById('child')
+
+// function childFun(e) {
+//   console.log('child')
+//   console.log(e)
+// }
+
+// child.addEventListener('click', childFun)
+
+// var parent = document.getElementById('parent')
+
+
+// function parentFun(e) {
+//   console.log('parent')
+//   console.log(e)
+// }
+// parent.addEventListener('click', parentFun)
+
+//event delegation
+
+// var table = document.getElementById('table')
+
+// function tableClick(e) {
+//   console.log('clicked')
+//   console.log(e)
+//   console.log(e.target)
+// }
+
+// table.addEventListener('click', tableClick)
+
 
 
 
