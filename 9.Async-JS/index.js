@@ -76,7 +76,7 @@
 // }
 
 
-// async function displayData() { 
+// async function displayData() {
 // var data1 = await fetchData(2)
 // console.log(data1)
 // var data2 = await fetchData(data1)
@@ -88,6 +88,111 @@
   
 // }
 // displayData()
+
+//api calls
+
+var parent = document.getElementById('parent')
+
+var getBtn = document.getElementById('get')
+
+function getBtnFun() {
+  fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((res) => {
+     return res.json()
+    }).then((data) => {
+      data.forEach((obj) => {
+      var para = document.createElement('p')
+        console.log(para)
+        para.textContent = obj.title
+        parent.appendChild(para)
+     })
+    console.log(data)
+    }).catch((err) => {
+    console.log(err)
+  })
+}
+
+getBtn.addEventListener('click', getBtnFun)
+
+//send data
+
+var sendBtn = document.getElementById('send')
+
+var newObj = {
+  userId: 200,
+  title: 'hello ap', 
+  body: 'my body'
+}
+
+function sendBtnFun() {
+  fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    headers: {
+      contentType : 'Application/json'
+    },
+    body : JSON.stringify(newObj)
+  }).then((res) => {
+    console.log(res)
+    return res.json()
+  }).then((data) => {
+    console.log(data)
+  }).catch((err) => {
+    console.log(err)
+  })
+}
+
+sendBtn.addEventListener('click', sendBtnFun)
+
+//update data
+
+var updateBtn = document.getElementById('update')
+
+var updateObj = {
+  userId: 'my userid',
+  title: 'my title',
+  body: 'my body'
+}
+
+function updateBtnFun() {
+  
+  fetch('https://jsonplaceholder.typicode.com/posts/10', {
+    method: 'PUT',
+    headers: {
+      contentType : 'Application/json'
+    },
+    body : JSON.stringify(updateObj)
+  }).then((res) => {
+    console.log(res)
+    return res.json()
+  }).then((data) => {
+    console.log(data)
+  }).catch((err) => {
+    console.log(err)
+  })
+}
+
+updateBtn.addEventListener('click', updateBtnFun)
+
+
+//delete data
+
+var deleteBtn = document.getElementById('delete')
+
+
+function deleteBtnFun() {
+  fetch('https://jsonplaceholder.typicode.com/posts/10', {
+    method: 'DELETE',
+  }).then((res) => {
+    console.log(res)
+    return res.json()
+  }).then((data) => {
+    console.log(data)
+  }).catch((err) => {
+    console.log(err)
+  })
+}
+
+deleteBtn.addEventListener('click', deleteBtnFun)
 
 
 
