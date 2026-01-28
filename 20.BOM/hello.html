@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Hello page</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsam cupiditate error recusandae sequi est earum in impedit? Inventore, quasi doloribus maxime dignissimos minima ab numquam dolorum, blanditiis vero molestiae deleniti laudantium unde excepturi deserunt quaerat. Quis obcaecati iure culpa iste, nostrum sint aliquid quaerat distinctio ipsa deleniti tenetur repellat.</p>
+  <button id="back">back</button>
+  <script>
+   var backBtn =  document.getElementById('back')
+
+   function backBtnFun(){
+    window.history.back()
+   }
+   backBtn.addEventListener('click', backBtnFun)
+  </script>
+</body>
+</html>
